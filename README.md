@@ -1,38 +1,57 @@
- # Compound Interst Calculator
+# Compound Interest Calculator
 
-    #### Video Demo:  https://youtu.be/WpeMyAof-xw
+## Overview
+The **Compound Interest Calculator** is a Python-based financial tool designed to help users perform essential financial calculations, such as calculating compound interest, determining the future value of regular investments, and computing the monthly payments needed to repay a loan. This project aims to empower users to make informed financial decisions by offering clear and accurate results.
 
-    #### Description:
+## Highlights
+- Developed core financial functions to handle compound interest, future value calculations, and loan repayment in Python.
+- Ensured user-friendly input validation and output formatting, presenting results in a currency format for easy comprehension.
+- Incorporated test-driven development (TDD) principles by implementing unit tests to verify the accuracy of each financial calculation function.
 
-    The Compound Interest Calculator is a Python-based financial tool designed to help users perform essential financial calculations. This project focuses on providing users with an intuitive way to calculate compound interest, determine the future value of regular investments, and compute the monthly payments required to repay a loan. The calculator ensures that users can make informed financial decisions by offering accurate and easy-to-understand results.
+## Technologies Used
+- **Python (NumPy)**: Mathematical operations for accurate financial calculations.
+- **PyTest**: Unit testing framework for validating function accuracy.
 
-    Files and Their Contents
-    1. project.py
-    This is the main file of the project, containing the core functionalities:
+## Data Analysis Workflow
 
-    calculate_compound_interest(principal, rate, years): This function calculates the total amount accumulated after a specified number of years, considering compound interest. It takes the initial principal, the annual interest rate, and the number of years as inputs. The result is formatted as a currency string.
+1. **Core Functionalities**:
+   - **Compound Interest Calculation**: Computes the total amount accumulated after a specified number of years, considering compound interest.
+   - **Future Value Calculation**: Determines the future value of regular investments over a given period.
+   - **Loan Repayment Calculation**: Calculates the fixed monthly payment required to repay a loan.
 
-    calculate_future_value(payment, rate, periods): This function calculates the future value of a series of regular payments (e.g., monthly investments) over a specified period. It uses the interest rate per period and the total number of periods to determine the final value of the investments.
+2. **Input Validation and Output Formatting**:
+   - Implemented helper functions to ensure user inputs are valid (e.g., positive numbers, correct rate format).
+   - Formatted numerical results as currency to improve readability.
 
-    calculate_loan_payment(principal, rate, periods): This function determines the fixed monthly payment required to repay a loan. It considers the loan amount (principal), the monthly interest rate, and the total number of payments.
+3. **Testing**:
+   - Used unit tests to validate key functions, ensuring accurate financial results:
+     - **Compound Interest**: Verified against known values.
+     - **Future Value**: Checked for regular investment accuracy.
+     - **Loan Repayment**: Ensured correct monthly payment calculation.
 
-    get_valid_amount(prompt) and get_valid_rate(prompt): These helper functions ensure that the user inputs are valid. They prompt the user until a positive numerical value is provided. The get_valid_rate function also converts the annual interest rate from a percentage to a decimal for accurate calculations.
+## Presentation
+A video demonstration of the Compound Interest Calculator, including how to use it and explanations of its core functionalities, can be found here:
+- **[Video Demo](https://youtu.be/WpeMyAof-xw)**
 
-    format_currency(value): This function formats numerical results as currency, ensuring all outputs are displayed with two decimal places and a dollar sign, making them clear and user-friendly.
+## Files and Their Contents
 
-    main(): The entry point of the program, which orchestrates the entire process. It prompts the user for input values, invokes the relevant calculation functions, and prints the results in a clear and concise manner.
+1. **project.py** (Main Project File)
+   - **Functions**:
+     - `calculate_compound_interest(principal, rate, years)`: Calculates the total accumulated amount with compound interest.
+     - `calculate_future_value(payment, rate, periods)`: Computes the future value of regular investments.
+     - `calculate_loan_payment(principal, rate, periods)`: Determines the fixed monthly loan repayment amount.
+     - `get_valid_amount(prompt)` and `get_valid_rate(prompt)`: Helper functions for input validation.
+     - `format_currency(value)`: Formats numerical results as currency.
+     - `main()`: Entry point that orchestrates the input, calculation, and output display.
 
-    2. test_project.py
-    This file contains the test cases for the core functions in project.py:
+2. **test_project.py** (Testing File)
+   - **Tests**:
+     - `test_calculate_compound_interest()`: Verifies compound interest calculations.
+     - `test_calculate_future_value()`: Tests future value calculations.
+     - `test_calculate_loan_payment()`: Checks the accuracy of loan repayment calculations.
 
-    test_calculate_compound_interest(): Tests the accuracy of the compound interest calculations against known values.
-    test_calculate_future_value(): Verifies that the future value calculations for regular payments are correct.
-    test_calculate_loan_payment(): Ensures that the loan payment calculations return the correct monthly payment.
-
-
-    The design of the Compound Interest Calculator was guided by the principles of simplicity, accuracy, and user-friendliness.Another design decision was to use numpy for handling mathematical operations, particularly exponentiation, to ensure accuracy and consistency in the calculations.
-
-    This project not only demonstrates the core concepts of financial calculations but also showcases best practices in Python programming, including modularity, testing, and user-friendly design. The accompanying README.md provides a comprehensive overview of the project, ensuring that users and developers alike can understand and utilize the tool effectively.
+## Design Principles
+The design of the Compound Interest Calculator emphasizes simplicity, accuracy, and user-friendliness. It leverages modular programming and testing best practices to ensure reliable and consistent results. The use of NumPy for mathematical operations further enhances the accuracy of financial computations. The accompanying README.md provides a comprehensive guide to using the tool effectively.
 
 
 
