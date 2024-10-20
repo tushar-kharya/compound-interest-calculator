@@ -1,7 +1,7 @@
 # Compound Interest Calculator
 
 ## Overview
-The **Compound Interest Calculator** is a Python-based financial tool designed to help users perform essential financial calculations, such as calculating compound interest, determining the future value of regular investments, and computing the monthly payments needed to repay a loan. This project aims to empower users to make informed financial decisions by offering clear and accurate results.
+Part of the CS50P final exam, the **Compound Interest Calculator** is Python-based financial tool designed to help users perform essential financial calculations, such as calculating compound interest, determining the future value of regular investments, and computing the monthly payments needed to repay a loan. This project aims to empower users to make informed financial decisions by offering clear and accurate results.
 
 ## Highlights
 - Developed core financial functions to handle compound interest, future value calculations, and loan repayment in Python.
